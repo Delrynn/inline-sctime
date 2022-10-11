@@ -74,8 +74,10 @@ def injectSCTime(word, word_eol, event):
         sctime = parseDistance(distRegexMatch)
         word[1] = '\u200c' + re.sub(distanceRegex, distRegexMatch[0] + sctime, word[1], re.IGNORECASE)
         hexchat.emit_print(event, *word)
+        return hexchat.EAT_ALL
      
-    return hexchat.EAT_ALL
+    return hexchat.EAT_NONE
+    
  
 
 hexchat.hook_print("Channel Message", injectSCTime, "Channel Message")
