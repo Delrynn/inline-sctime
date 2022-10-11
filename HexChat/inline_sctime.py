@@ -39,7 +39,7 @@ def calcTotalSeconds(lightSeconds):
     else:
         return int((lightSeconds - 5265389.609) / 2001 + 3412)
 
-#converts total seconds into human readable format
+#converts total seconds into human read
 def createTimeString(totalSeconds):
     hours = totalSeconds // 3600
     remainderSec = totalSeconds % 3600
