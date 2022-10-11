@@ -9,12 +9,12 @@ from datetime import timedelta
 
 print("Inline-SCTime Script Loaded")
 
-distanceRegex = '((\d+|,|\.)+)\s?(kls|mls|ls|ly)'
+distanceRegex = '(?P<distance>(?P<value>\d+(\.\d+|,\d+)?)\s*(?P<unit>ls|kls|mls|ly))'
 
 #bulk of the work, takes value like "50kls" and returns an sctime estimate like "(1h23m4s)"
 def parseDistance(distRegexMatch):
-    distNum = int(str(distRegexMatch[1]).replace(',','').replace('.',''))
-    distUnits = distRegexMatch[distRegexMatch.lastindex]
+    distNum = float(str(distRegexMatch.group('value').replace(',','.')))
+    distUnits = distRegexMatch.group('unit')
     distLs = convertToLS(distNum, distUnits)
     totalSeconds = calcTotalSeconds(distLs)
     return createTimeString(totalSeconds)
@@ -72,7 +72,7 @@ def injectSCTime(word, word_eol, event):
     distRegexMatch = re.search(distanceRegex, word[1], re.IGNORECASE)
     if (distRegexMatch):
         sctime = parseDistance(distRegexMatch)
-        word[1] = '\u200c' + re.sub(distanceRegex, distRegexMatch[0] + sctime, word[1], re.IGNORECASE)
+        word[1] = '\u200c' + re.sub(distanceRegex, distRegexMatch.group('distance') + sctime, word[1], flags=re.IGNORECASE)
         hexchat.emit_print(event, *word)
         return hexchat.EAT_ALL
      
