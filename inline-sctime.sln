@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "inline-sctime", "inline-sctime.pyproj", "{BB238175-A462-4535-9C1C-4528BB40ADC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB238175-A462-4535-9C1C-4528BB40ADC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB238175-A462-4535-9C1C-4528BB40ADC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D8B34B2-DE9C-4AFE-B11F-CDE8A4B0BE2D}
+	EndGlobalSection
+EndGlobal
