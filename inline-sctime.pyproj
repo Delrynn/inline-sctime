@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bb238175-a462-4535-9c1c-4528bb40adc6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>inline_sctime.py</StartupFile>
+    <StartupFile>HexChat\inline_sctime.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="inline_sctime.py" />
+    <Compile Include="HexChat\inline_sctime.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdiIRC\" />
+    <Folder Include="HexChat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdiIRC\inline-sctime.ini" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
