@@ -57,7 +57,7 @@ def createTimeString(totalSeconds):
 
 
 def injectSCTime(word, word_eol, event):
-    if word[1].startswith('\u200c'):
+    if word[1].startswith('\u200c') or word[0] == 'MechaSqueak[BOT]':
         return hexchat.EAT_NONE
 
     distRegexMatch = re.search(distanceRegex, word[1], re.IGNORECASE)
