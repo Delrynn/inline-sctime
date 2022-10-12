@@ -69,7 +69,7 @@ def injectSCTime(word, word_eol, event):
         timeString = createTimeString(totalTime)
 
         distanceWithTime = f'{distRegexMatch.group("distance")} {timeString}'
-        updatedMessage = re.sub(distanceRegex, distanceWithTime, word[1], flags=re.IGNORECASE)
+        updatedMessage = re.sub(distanceRegex, distanceWithTime, word[1], flags=re.IGNORECASE, count=1)
 
         word[1] = f'\u200c{updatedMessage}'
         hexchat.emit_print(event, *word)
