@@ -1,11 +1,13 @@
 __module_name__ = "inline-sctime"
-__module_version__ = "0.1"
+__module_version__ = "0.11"
 __module_description__ = "Detects distances like '40kls', '1 ly', '2,000 ls' and injects a !sctime estimate into the message"
 
 import hexchat
 import re
 
 distanceRegex = r'(?P<distance>(?P<value>\d+(\.\d+|,\d+)?)\s*(?P<unit>ls|kls|mls|ly))'
+#use this regex instead to only match on callouts
+#distanceRegex = r'#.*\s(?P<distance>(?P<value>\d+(\.\d+|,\d+)?)\s*(?P<unit>ls|kls|mls|ly))'
 
 unitFactors = {
     'ls': 1,
@@ -39,7 +41,7 @@ def calcTotalSeconds(lightSeconds):
     else:
         return int((lightSeconds - 5265389.609) / 2001 + 3412)
 
-#converts total seconds into human read
+#converts total seconds into a human readable format
 def createTimeString(totalSeconds):
     hours = totalSeconds // 3600
     remainderSec = totalSeconds % 3600
