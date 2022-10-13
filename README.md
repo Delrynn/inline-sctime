@@ -9,6 +9,7 @@
   - enable/disable function
 - Calculate multiple sctimes in a single line
 - Some sort of gravwell support
+- Organize Adi into separate functions
 
 # Limitations:
 
