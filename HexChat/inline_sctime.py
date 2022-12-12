@@ -58,8 +58,23 @@ def createTimeString(totalSeconds):
     return f'\035{formattedTime}\035'
 
 
+
+SCTimeEnabled = True
+def togglePlugin(word, word_eol, userdata):
+    global SCTimeEnabled
+    hexchat.prnt('Toggling plugin...')
+    if SCTimeEnabled:
+        SCTimeEnabled = False
+        hexchat.prnt('Inline SCTime Disabled')
+    else:
+        SCTimeEnabled = True
+        hexchat.prnt('Inline SCTime Enabled')
+
+    return hexchat.EAT_ALL
+
 def injectSCTime(word, word_eol, event):
-    if word[1].startswith('\u200c') or word[0] == 'MechaSqueak[BOT]':
+    global SCTimeEnabled
+    if word[1].startswith('\u200c') or word[0] == 'MechaSqueak[BOT]' or not SCTimeEnabled:
         return hexchat.EAT_NONE
 
     distRegexMatch = re.search(distanceRegex, word[1], re.IGNORECASE)
@@ -77,5 +92,7 @@ def injectSCTime(word, word_eol, event):
 
     return hexchat.EAT_NONE
 
+
 hexchat.hook_print("Channel Message", injectSCTime, "Channel Message")
 hexchat.hook_print("Your Message", injectSCTime, "Your Message")
+hexchat.hook_command("togglesctime", togglePlugin)

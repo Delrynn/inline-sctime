@@ -6,7 +6,6 @@
   - Color options
   - Channel limit options
   - Callout limit options
-  - enable/disable function
 - Calculate multiple sctimes in a single line
 - Some sort of gravwell support
 - Organize Adi into separate functions
@@ -18,6 +17,8 @@ Mecha is ignored
 Distances in light years is ignored over 0.5ly
 
 Unintentional:
+Historic logs when launching a client might print incorrect (now) timestamps for lines with distances in them
+
 Adi:
 Only calculates right-most distance in a message
 Only messages from other users
