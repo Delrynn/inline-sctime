@@ -51,19 +51,19 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 
 # Limitations:
 
-Purposeful:
-Mecha is ignored
-Distances in light years is ignored over 0.5ly
+Purposeful:  
+Mecha is ignored  
+Distances in light years is ignored over 0.5ly  
 
-Unintentional:
-Historic logs when launching a client might print incorrect (now) timestamps for lines with distances in them
+Unintentional:  
+Historic logs when launching a client might print incorrect (now) timestamps for lines with distances in them  
 
-Adi:
-Only calculates right-most distance in a message
-Only messages from other users
-Does not support DMs
+Adi:  
+Only calculates right-most distance in a message  
+Only messages from other users  
+Does not support DMs  
 
-HexChat:
-Only calculates left-most distance in a message
-Supports self and channel messages
-Does not support DMs
+HexChat:  
+Only calculates left-most distance in a message  
+Supports self and channel messages  
+Does not support DMs  
