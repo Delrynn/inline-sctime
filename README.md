@@ -53,7 +53,7 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 
 Purposeful:  
 Mecha is ignored  
-Distances in light years is ignored over 0.5ly  
+Distances in light years are ignored over 0.5ly  
 
 Unintentional:  
 Historic logs when launching a client might print incorrect (now) timestamps for lines with distances in them  
