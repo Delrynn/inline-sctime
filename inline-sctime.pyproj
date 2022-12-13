@@ -31,9 +31,12 @@
   <ItemGroup>
     <Folder Include="AdiIRC\" />
     <Folder Include="HexChat\" />
+    <Folder Include="mIRC\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdiIRC\inline-sctime.ini" />
+    <Content Include="mIRC\alias.ini" />
+    <Content Include="mIRC\remote.ini" />
     <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

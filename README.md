@@ -15,6 +15,14 @@ to use it.
 4. Copy the contents of [AdiIRC/inline-sctime.ini](AdiIRC/inline-sctime.ini) into the new file
 5. Save the file with the name inline-sctime.ini (file > save)
 
+## mIRC:
+
+1. Open AdiIRC
+2. Go to Tools > Scripts Editor
+3. Copy the contents of [mIRC/remote.ini](mIRC/remote.ini) into the Remote tab
+4. Copy the contents of [mIRC/aliases.ini](mIRC/aliases.ini) into the Aliases tab
+5. Save the files (file > save all)
+
 ## HexChat:
 
 Close HexChat. Open a file browser and go to the folder for your OS:
@@ -39,8 +47,7 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 
 # TODO:
 
-- Add mIRC support
-- Color formatting for HexChat
+- Color formatting for HexChat, mIRC
 - Configurable options
   - Color options
   - Channel limit options
