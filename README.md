@@ -68,11 +68,9 @@ Unintentional:
 Historic logs when launching a client might print incorrect (now) timestamps for lines with distances in them  
 
 Adi:  
-Only calculates right-most distance in a message  
-Only messages from other users  
+Only calculates right-most distance in a message   
 Does not support DMs  
 
 HexChat:  
 Only calculates left-most distance in a message  
-Supports self and channel messages  
 Does not support DMs  
