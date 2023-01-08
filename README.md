@@ -40,7 +40,7 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 ## Features:
 
 - Injects estimated supercruise travel time next to detected distances
-- AdiIRC only, injected text color will match the whois color
+- AdiIRC only, injected text color will match the whois color, gravwell detection with -g or 'gravwell'
 - Toggle the plugin with the command "/togglesctime" (case insensitive)
 - All messages, or just case callouts
   - Case callouts are prefixed with the case number (ex: #69 bc+ 20kls)
