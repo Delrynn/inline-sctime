@@ -42,6 +42,7 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 - Injects estimated supercruise travel time next to detected distances
 - AdiIRC only, injected text color will match the whois color, gravwell detection with -g or 'gravwell'
 - Toggle the plugin with the command "/togglesctime" (case insensitive)
+- /sctime alias for silent one-off calculation
 - All messages, or just case callouts
   - Case callouts are prefixed with the case number (ex: #69 bc+ 20kls)
   - Choose the desired regular expression at the top of the plugin file
@@ -55,7 +56,6 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
   - Channel limit options
   - Callout limit options
 - Calculate multiple sctimes in a single line
-- Some sort of gravwell support
 - Organize Adi into separate functions
 
 # Limitations:
