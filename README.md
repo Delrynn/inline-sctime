@@ -5,7 +5,7 @@ such as "30 kls" or "30000ls" is printed in chat, this plugin will estimate the 
 with the same equations that Mecha/SwiftSqueak uses. It is designed with dispatchers in mind, though all are welcome
 to use it.
 
-![Inline-sctime example](/Images/example.png)
+![Inline-sctime example](/Images/example2.png)
 
 # Installation:
 
