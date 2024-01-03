@@ -5,7 +5,7 @@ such as "30 kls" or "30000ls" is printed in chat, this plugin will estimate the 
 with the same equations that Mecha/SwiftSqueak uses. It is designed with dispatchers in mind, though all are welcome
 to use it.
 
-![Inline-sctime example](/Images/example.png)
+![Inline-sctime example](/Images/example3.png)
 
 # Installation:
 
@@ -40,7 +40,7 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 ## Features:
 
 - Injects estimated supercruise travel time next to detected distances
-- AdiIRC only, injected text color will match the whois color, gravwell detection with -g or 'gravwell'
+- AdiIRC only, will calculate both regular and gravwell times side-by-side
 - Toggle the plugin with the command "/togglesctime" (case insensitive)
 - /sctime alias for silent one-off calculation
 - All messages, or just case callouts
