@@ -2,6 +2,8 @@ __module_name__ = "inline-sctime"
 __module_version__ = "0.11"
 __module_description__ = "Detects distances like '40kls', '1 ly', '2,000 ls' and injects a !sctime estimate into the message"
 
+# Documentation and updates: https://github.com/Delrynn/inline-sctime
+
 import hexchat
 import re
 
