@@ -41,6 +41,8 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 
 - Injects estimated supercruise travel time next to detected distances
 - AdiIRC only, will calculate both regular and gravwell times side-by-side
+- AdiIRC only, will calculate SCO travel time (based on Mandalay)
+  - SCO Estimate will turn red after Mandalay default tank would be used up
 - Toggle the plugin with the command "/togglesctime" (case insensitive)
 - /sctime alias for silent one-off calculation
 - All messages, or just case callouts
