@@ -54,11 +54,9 @@ Download [HexChat/inline_sctime.py](HexChat/inline_sctime.py) and save the file 
 
 - Color formatting for HexChat, mIRC
 - Configurable options
-  - Color options
   - Channel limit options
   - Callout limit options
 - Calculate multiple sctimes in a single line
-- Organize Adi into separate functions
 
 # Limitations:
 
